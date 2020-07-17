@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../../components/Title/Title';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import api from '../../api/service';
 // import api from '../../api/service';
 
 class Home extends Component{
@@ -10,12 +9,7 @@ class Home extends Component{
 
         this.state = {
             inputValue: "",
-            ghData: []
         }
-    }
-
-    componentDidMount = async user => {
-        const pegaApi = await api.get(`/${user}`)
     }
 
     inpuUser = e => {
